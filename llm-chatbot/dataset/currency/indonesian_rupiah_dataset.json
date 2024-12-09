@@ -1,0 +1,42 @@
+[
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp123.456?",
+    "completion": "Seratus dua puluh tiga ribu empat ratus lima puluh enam rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp3.500.000?",
+    "completion": "Tiga juta lima ratus ribu rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp5.000?",
+    "completion": "Lima ribu rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp100.000?",
+    "completion": "Seratus ribu rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp75.550.000?",
+    "completion": "Tujuh puluh lima juta lima ratus lima puluh ribu rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp120.340.056?",
+    "completion": "Seratus dua puluh juta tiga ratus empat puluh ribu lima puluh enam rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp1?",
+    "completion": "Satu rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp25?",
+    "completion": "Dua puluh lima rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp1.001?",
+    "completion": "Satu ribu satu rupiah"
+  },
+  {
+    "prompt": "Bagaimana cara menyebutkan Rp17.000?",
+    "completion": "Tujuh sebelas ribu rupiah"
+  }
+]
