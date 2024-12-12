@@ -10,7 +10,7 @@ def format_docs(docs):
 def answer_question_with_context(question):
     messages = []
     persist_directory = "db"
-    local_embeddings = OllamaEmbeddings(model="qwen2.5:14b-instruct-q5_K_M")
+    local_embeddings = OllamaEmbeddings(model="arcmr/satria-bipa:latest")
     
     vectorstore = Chroma(persist_directory=persist_directory, embedding_function=local_embeddings)
     
@@ -32,7 +32,7 @@ def answer_question_with_context(question):
     {question}"""
     
     rag_prompt = ChatPromptTemplate.from_template(RAG_TEMPLATE)
-    model = ChatOllama(model="qwen2.5:14b-instruct-q5_K_M")
+    model = ChatOllama(model="arcmr/satria-bipa:latest")
     
     chain = (
         RunnablePassthrough.assign(context=lambda input: format_docs(input["context"]))
