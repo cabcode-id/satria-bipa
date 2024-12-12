@@ -8,8 +8,8 @@ def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
 def answer_question_with_context(conversation_history, question):
-    persist_directory = "dbqwen-currency"
-    local_embeddings = OllamaEmbeddings(model="qwen2.5:14b-instruct-q5_K_M")
+    persist_directory = "db32"
+    local_embeddings = OllamaEmbeddings(model="arcmr/satria-bipa:latest")
 
     vectorstore = Chroma(persist_directory=persist_directory, embedding_function=local_embeddings)
 
@@ -33,7 +33,7 @@ def answer_question_with_context(conversation_history, question):
 
     rag_prompt = ChatPromptTemplate.from_template(RAG_TEMPLATE)
     model = ChatOllama(
-        model="qwen2.5:14b-instruct-q5_K_M",
+        model="arcmr/satria-bipa:latest",
         repetition_penalty=1.05,
         temperature=0.7,
         top_p=0.8,
