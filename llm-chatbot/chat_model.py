@@ -20,7 +20,7 @@ def answer_question_with_context(question):
     
     rag_prompt = ChatPromptTemplate.from_template(RAG_TEMPLATE)
     model = ChatOllama(
-        model="qwen2.5:14b-instruct-q5_K_M",
+        model="arcmr/satria-bipa:latest",
         repetition_penalty=1.05,
         temperature=0.7,
         top_p=0.8,
